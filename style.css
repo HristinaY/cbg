@@ -1,0 +1,36 @@
+:root {
+    --mustard: #f7a91b;
+    --teal: #197f85;
+    --red: #cd005e;
+    --yellow: #f6ca5c;
+    --grey: #e6e6e6;
+    --text-color: #4a4a4a;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: var(--text-color);
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.main-baner {
+    width: 100vw;
+    background-color: var(--mustard);
+}
+
+.baner-content {
+    max-width: 400px;
+    margin-inline: auto 0;
+    text-align: right;
+    padding-block: 60px;
+}
