@@ -21,11 +21,55 @@ body {
 .container {
     max-width: 1024px;
     margin: 0 auto;
+    position: relative;
+}
+
+.btn {
+    padding: 1em 1.7em;
+    background-color: #333333;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+.bg-mustad {
+    background-color: var(--mustard);
+}
+
+.bg-teal {
+    background-color: var(--teal);
+}
+
+.bg-grey {
+    background-color: var(--grey);
+}
+
+.color-red {
+    color: var(--red);
 }
 
 .main-baner {
     width: 100vw;
-    background-color: var(--mustard);
+}
+
+.header {
+    padding-block: 1.5em;
+}
+
+.header>.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.header-btn {
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 0.8em;
 }
 
 .baner-content {
