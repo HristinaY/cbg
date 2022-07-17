@@ -19,4 +19,10 @@ $(".carousel-arr").on("click", function() {
     $(currentItem).removeClass("active");
 });
 
+const header = $(".header");
+$(window).scroll(function() {
+    let scroll = $(window).scrollTop();
+    scroll >= 50 ? header.addClass("sticky") : header.removeClass("sticky");
+});
+
 
