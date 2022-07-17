@@ -148,6 +148,48 @@ body {
     text-align: center;
 }
 
+.carousel {
+    position: relative;
+    width: 100vw;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .3s;
+}
+
+.carousel-item.active {
+    opacity: 1;
+    position: static;
+}
+
+.carousel-img {
+    width: 100%;
+}
+
+.arr-back,
+.arr-fw {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3em;
+    font-weight: bold;
+    z-index: 99;
+    margin: 0;
+    cursor: pointer;
+}
+
+.arr-back {
+    left: 50px;
+}
+
+.arr-fw {
+    right: 50px;
+}
+
 @media only screen and (max-width: 768px) {
     .usp-container {
         grid-template-columns: repeat(2, 1fr);
